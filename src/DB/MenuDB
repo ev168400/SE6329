@@ -1,20 +1,20 @@
-1, Appetizer, 2, 10.99
-2, Appetizer, 3, 15.50
-3, Main Course, 1, 25.99
-4, Main Course, 2, 30.75
-5, Dessert, 3, 8.50
-6, Dessert, 1, 12.25
-7, Beverage, 4, 5.99
-8, Beverage, 2, 3.50
-9, Appetizer, 1, 8.75
-10, Main Course, 1, 22.00
-11, Dessert, 2, 9.99
-12, Beverage, 3, 4.25
-13, Appetizer, 2, 11.75
-14, Main Course, 2, 28.50
-15, Dessert, 1, 7.99
-16, Beverage, 4, 6.25
-17, Appetizer, 3, 13.50
-18, Main Course, 1, 24.99
-19, Dessert, 2, 10.75
-20, Beverage, 3, 5.50
+1, Calamari, Appetizer, 2, 10.99
+2, Calamari, Appetizer, 3, 15.50
+3, Alfredo Pasta, Main Course, 1, 25.99
+4, Alfredo Pasta, Main Course, 2, 30.75
+5, Green Tea Ice Cream, Dessert, 3, 8.50
+6, Tempura Ice Cream, Dessert, 1, 12.25
+7, Jungle Juice, Beverage, 4, 5.99
+8, Jungle Juice, Beverage, 2, 3.50
+9, Calamari, Appetizer, 1, 8.75
+10, Alfredo Pasta, Main Course, 1, 22.00
+11, Green Tea Ice Cream, Dessert, 2, 9.99
+12, Orange Juice, Beverage, 3, 4.25
+13, Calamari, Appetizer, 2, 11.75
+14, Lasagna, Main Course, 2, 28.50
+15, Tempura Ice Cream, Dessert, 1, 7.99
+16, Orange Juice, Beverage, 4, 6.25
+17, Calamari, Appetizer, 3, 13.50
+18, Lasagna, Main Course, 1, 24.99
+19, Tempura Ice Cream, Dessert, 2, 10.75
+20, Orange Juice, Beverage, 3, 5.50
