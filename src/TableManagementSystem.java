@@ -1,11 +1,16 @@
 import java.util.ArrayList;
-
+ 
 public class TableManagementSystem {
     ArrayList<TableRecord> tables;
 
-    public TableManagementSystem(){}
+    public TableManagementSystem(){
+        tables = new ArrayList<>();
+    }
 
-    public ArrayList<Menu_Item> SelectTable(TableRecord table){
+    public ArrayList<TableRecord> getTables(){ return tables;}
+    
+    public ArrayList<Menu_Item> SelectTable(String t){
+        TableRecord table = new TableRecord(t);
         tables.add(table);
         return table.initializeTab(table.table_ID);
     }

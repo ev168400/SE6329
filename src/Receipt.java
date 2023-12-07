@@ -9,7 +9,8 @@ public class Receipt {
 	private CustomerOrderRecord order = null;
 	
 	// Constructor
-	Receipt(Payment current_payment, CustomerOrderRecord current_order) {
+	public Receipt(){}
+	public Receipt(Payment current_payment, CustomerOrderRecord current_order) {
 		this.p = current_payment;
 		this.order = current_order;
 	}
@@ -24,8 +25,9 @@ public class Receipt {
 	//- storeReceipt(r : Receipt)
 	private static void storeReceipt(Receipt given_receipt) {
 		try {
-			File new_file = new File("ReceiptsDB.txt");
-			FileWriter writer = new FileWriter("ReceiptsDB.txt", true);
+			String filePath = "src\\DB\\ReceiptsDB";
+			File new_file = new File(filePath);
+			FileWriter writer = new FileWriter(new_file, true);
 			// Customer Order attributes
 			writer.write((given_receipt.order).orderID + ", ");
 			writer.write((given_receipt.order).tableID + ", ");
@@ -47,7 +49,7 @@ public class Receipt {
 	public Payment getPayment() {
 		return p;
 	}
-	
+	 
 	public void setPayment (Payment new_payment) {
 		this.p = new_payment;
 	}

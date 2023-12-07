@@ -1,16 +1,19 @@
 import java.util.ArrayList;
-
+ 
 public class TableRecord {
     int table_ID;
     String table_status;
     ArrayList<Menu_Item> table_tab;
 
-    public TableRecord(){}
+    public TableRecord(String t){
+        String[] parts = t.split(",");
+        this.table_ID = Integer.parseInt(parts[0].trim());
+        this.table_status = parts[1].trim();
+    }
 
     public ArrayList<Menu_Item> initializeTab(int t){
         table_tab = new ArrayList<Menu_Item>();
         table_status = "Occupied";
-        table_ID = t;
         return table_tab;
     }
     public ArrayList<Menu_Item> updateTableTab(Menu_Item i){
