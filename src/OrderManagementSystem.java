@@ -31,10 +31,10 @@ public class OrderManagementSystem
 			fw.write(order.paymentTotal + "\n");
     
             		fw.close(); 
-       		} 
+        	} 
         	catch (Exception e)
 		{ 
-         		e.getStackTrace(); 
+            		e.getStackTrace(); 
         	}
 	}
 }
