@@ -18,16 +18,23 @@ public class OrderManagementSystem
 
 			fw.write(CustomerOrderRecord.orderID + ", ");
 			fw.write(order.tableID + ", ");
-			fw.write(order.numberOfItems + ", [");
+			fw.write(order.numberOfItems + ", ");
 			for(int i = 0; i < order.Items.size(); i++)
-				fw.write(order.Items.get(i).name + ", ");
-			fw.write("], " + order.paymentTotal + "\n");
+			{
+				if(i == 0)
+					fw.write("[" + order.Items.get(i).name + ", ");
+				else if(i == (order.Items.size() - 1))
+					fw.write(order.Items.get(i).name + "], ");
+				else
+					fw.write(order.Items.get(i).name + ", ");
+			}
+			fw.write(order.paymentTotal + "\n");
     
-            fw.close(); 
-        } 
-        catch (Exception e)
+            		fw.close(); 
+       		} 
+        	catch (Exception e)
 		{ 
-            e.getStackTrace(); 
-        }
+         		e.getStackTrace(); 
+        	}
 	}
 }
